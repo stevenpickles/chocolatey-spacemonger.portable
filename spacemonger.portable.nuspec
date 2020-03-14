@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>spacemonger.portable</id>
+    <version>1.4.0</version>
+    <owners>stevenpickles</owners>
+    <title>SpaceMonger (Portable)</title>
+    <authors>Sean Werkema</authors>
+    <projectUrl>http://www.aplusfreeware.com/categories/LFWV/SpaceMonger.html</projectUrl>
+    <iconUrl>https://i.imgur.com/jzap5p0.png</iconUrl>
+    <copyright>1997-2000 Sean Werkema</copyright>
+    <licenseUrl>http://www.aplusfreeware.com/categories/LFWV/SpaceMonger.html</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <!-- Project source is closed and so there is no project source URL -->
+    <!--<projectSourceUrl>Software Source Location - is the software FOSS somewhere? Link to it with this</projectSourceUrl>-->
+    <docsUrl>http://www.aplusfreeware.com/categories/LFWV/SpaceMonger.html</docsUrl>
+    <tags>spacemonger</tags>
+    <summary>SpaceMonger is a tool for keeping track of the free space on your computer.</summary>
+    <description>
+        SpaceMonger is a tool for keeping track of the free space on your computer. Each file or folder on a given drive is displayed in a box in the main window whose size is a relative comparison to all the other files in your system. So, for example, if the "Windows" box takes up 90% of the screen, the "C:\Windows" folder and all its sub-folders and files are taking up 90% of your "C:" drive.
+
+        SpaceMonger is not a terribly complicated program to use, so the current version doesn't come with a user's manual. At the bottom of this page you can find a few helpful instructions for using it if you need them.
+        
+        First-Time Instructions
+        When you first use SpaceMonger, follow these instructions if you don't know what to do:
+
+        When you first open it, you will initially be presented with a blank window. Click "Open".
+        Click on a drive, like drive "C", and hit "OK".
+        Wait patiently while the program collects statistics on your drive. My, don't you have a lot of files!
+        SpaceMonger will then show you the contents of your drive as little rectangles. The larger the rectangle, the more space something is taking up. In the screen-shot on this page, above, which you can click to enlarge, "Windows" is taking up a full 20% of this drive.
+
+        Rectangles that have other rectangles in them are folders. Rectangles with no other rectangles in them are files. Colors are used to show how deeply the files and folders are nested.
+
+        You can get more information on a given folder by clicking on its title and then clicking "Zoom In" (or by double-clicking on its title). The window will change to show a larger, more detailed view of the folder and its files. You can zoom in as many times as you want. "Zoom Out" will take you back out (up) by one folder. "Zoom Full" will take you all the way back to show the whole drive.
+
+        If you see files or folders you want to delete, click them and hit "Delete". They will be moved to the Recycle Bin. If you want to see what they are first, click on them and hit "Run or Open", which will try to run them if they are programs or open them if they are files.
+
+        If you click the "Setup" button, you can change some aesthetic things about the program. You can't damage anything with the Setup dialog box, so feel free to try various options until you like how SpaceMonger looks and feels.
+    </description>
+    <releaseNotes>
+        Version 1.4.0 is the last free version, with:
+        - Internals rewritten to support multiple foreign languages. Currently foreign language support exists for British English, American English, and French (possibly with grammar errors).
+        - Supports popup info-tips that can display the full filename, the icon, the date, size, and attributes of any file or folder.
+        - Supports popup name-tips that prevent names from being obscured by not having enough space to display them.
+        - Open dialog box now uses large icons.
+        - Includes rollover boxes that highlight the current folder.
+        - Files display their sizes and dates if there is enough room.
+        - Option to save the current window position.
+        - Fixed zero-size bug that caused divide-by-zero errors with some audio CD disks.
+        - Minor changes to color palette to handle rollover boxes.
+        - Added support for the Windows Property dialog box.
+    </releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
